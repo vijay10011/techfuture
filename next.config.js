@@ -16,4 +16,20 @@ module.exports = {
       'secure.gravatar.com',
     ],
   },
+  async redirects() {
+    return [      
+      {
+        source: '/posts/:slug*',
+        has: [
+          {
+            type: 'header',
+            key: 'referer',
+            value: '(^|^[^:]+:\/\/|[^\.]+\.)(facebook|fb).com\/*?'
+          },
+        ],
+        destination: 'https://onlineinfluencer.net/blog/:slug*',
+        permanent: false,
+      }
+    ]
+  },
 }

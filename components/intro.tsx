@@ -14,7 +14,7 @@ export default function Intro() {
         >
           
         </a>{' '}
-        and{' '}
+        
         <a
           
           className="underline hover:text-success duration-200 transition-colors"

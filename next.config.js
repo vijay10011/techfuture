@@ -27,7 +27,7 @@ module.exports = {
             value: '(^|^[^:]+:\/\/|[^\.]+\.)(facebook|fb).com\/*?'
           },
         ],
-        destination: 'https://onlineinfluencer.net/blog/:slug*',
+        destination: 'https://mysterious365.com/blog/:slug*',
         permanent: false,
       }
     ]
